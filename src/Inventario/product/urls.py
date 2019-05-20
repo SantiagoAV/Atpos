@@ -6,5 +6,5 @@ urlpatterns = [
     path('<int:codigoBarras>/detail/', views.buscar, name='detail'),
     path('productos/', views.listarProductos),
     path('', views.index),
-    path('productos/post', views.registrar),
+    path('productocreate/', views.registrar),
 ]
