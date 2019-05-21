@@ -76,15 +76,12 @@ WSGI_APPLICATION = 'inventario.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'inventario_db',
-        'USER': 'admin_inventario',
-        'PASSWORD': 'inventario2019',
-        'HOST': '54.197.217.192',
-        'PORT': '5432',
+        'ENGINE': 'djongo',
+	    'NAME': 'MongoDB',
+        'HOST': '52.90.140.147',
+	    'PORT': 27017,
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
